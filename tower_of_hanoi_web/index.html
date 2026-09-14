@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tower of Hanoi</h1>
+        <div class="game-info">
+            <p>Moves: <span id="move-count">0</span></p>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+        
+        <div class="game-board">
+            <div class="peg" id="peg-0" data-peg="0">
+                <div class="peg-shaft"></div>
+            </div>
+            <div class="peg" id="peg-1" data-peg="1">
+                <div class="peg-shaft"></div>
+            </div>
+            <div class="peg" id="peg-2" data-peg="2">
+                <div class="peg-shaft"></div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>Goal: Move all disks from the first peg to the last peg.</p>
+            <p>Rule: A larger disk cannot be placed on top of a smaller disk.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
